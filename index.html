@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Animal GIFS!</title>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+</head>
+
+
+<body>
+
+    <div id="buttons-view"></div>
+
+    <form id="animal-form">
+        <h3 id="searchTitle">Add an Animal!</h3>
+        <label for="animal-input"></label>
+        <input type="text" id="animal-input">
+        <br>
+
+        <!-- Button triggers new cartoon to be added -->
+        <input type="button" class="btn btn-danger" id="addAnimal" type="submit" value="Add Animal">
+    </form>
+
+    <div id="animal-view">
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
