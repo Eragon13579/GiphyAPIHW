@@ -122,10 +122,14 @@ function renderButtons() {
 }
 
 // ========================================================
+$("form").submit(function (event) {
+    event.preventDefault();
+    $("#addAnimal").click();
+});
 
 // This function handles events where one button is clicked
-$('#addAnimal').on('click', function () {
-
+$('#addAnimal').on('click', function (event) {
+    event.preventDefault();
     // This line of code will grab the input from the textbox
     var animal = $('#animal-input').val().trim();
 
@@ -134,6 +138,8 @@ $('#addAnimal').on('click', function () {
 
     // Our array then runs which handles the processing of our animal array
     renderButtons();
+
+    $('#animal-input').val('')
 
 })
 
